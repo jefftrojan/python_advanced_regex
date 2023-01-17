@@ -7,9 +7,10 @@ def checker(email):
     check = re.match(email, email_pattern)
 
     if check:
-        return "Email is valid"
+        print("Email is valid")
     else:
-        return "Invalid email format"
+        print("Invalid email format")
 
 if __name__ == '__main__':
-    checker()
+    email = "test@jeff.trojan"
+    checker(email)
